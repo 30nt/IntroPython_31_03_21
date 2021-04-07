@@ -5,7 +5,7 @@
 
 
 # перменная - именованный объект
-number = 100
+number = 1000
 print(number)
 number = "Hello"
 print(number)
