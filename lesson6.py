@@ -149,9 +149,17 @@ some_string = "My name is Vova. I'm 41. But I still believe in magic. EXPELLIARM
 # print(result)
 #
 # 1. Дано целое число (int). Определить сколько нулей в этом числе.
-number = 8734687003485349000
+
 # zero_count = str(number).count("0")
 # print(zero_count, type(number))
+
+def count_zero(number):
+    zero_count = str(number).count("0")
+    return zero_count
+
+number = 8734687003485349000
+zero_count = count_zero(number)
+print(zero_count, type(number))
 
 # 2. Дано целое число (int). Определить сколько нулей в конце этого числа. Например для числа 1002000 - три нуля
 
