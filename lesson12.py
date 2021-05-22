@@ -10,34 +10,36 @@ import re
 # print(my_list)
 # print(new_list)
 #########################################################################
-# def sort_by_age(pers_dict):
-#     age = pers_dict["age"]
-#     return age
-#
-#
-# def sort_by_name(pers_dict):
-#     return pers_dict["name"]
-#
-#
-# def sort_by_name_len(pers_dict):
-#     name_len = len(pers_dict["name"])
-#     return name_len
-#
-#
-# def sort_by_name_len_and_alphabet(pers_dict):
-#     name = pers_dict["name"]
-#     return len(name), name
-#
-# persons = [
-#     {"name": "John", "age": 72},
-#     {"name": "Stephany", "age": 12},
-#     {"name": "Jack", "age": 42},
-#     {"name": "Jacob", "age": 37},
-#     {"name": "Annsy", "age": 29},
-# ]
-#
-# new_persons = sorted(persons, key=sort_by_name_len_and_alphabet)
-# print(new_persons)
+def sort_by_age(pers_dict):
+    age = pers_dict["age"]
+    return age
+
+
+def sort_by_name(pers_dict):
+    return pers_dict["name"]
+
+
+def sort_by_name_len(pers_dict):
+    name_len = len(pers_dict["name"])
+    return name_len
+
+
+def sort_by_name_len_and_alphabet(pers_dict):
+    name = pers_dict["name"]
+    return len(name), name
+
+persons = [
+    {"name": "John", "age": 72},
+    {"name": "Stephany", "age": 12},
+    {"name": "Jack", "age": 42},
+    {"name": "Jacob", "age": 37},
+    {"name": "Annsy", "age": 29},
+]
+
+new_persons = sorted(persons, key=lambda x: x["name"])
+print(new_persons)
+new_persons = sorted(persons, key=sort_by_name_len)
+print(new_persons)
 ####################################################################
 # def sort_by_bday(pers_dict):
 #     age = pers_dict["age"]
